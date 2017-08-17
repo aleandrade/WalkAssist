@@ -26,7 +26,7 @@
  * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.motorola.samples.mdksensor;
+package com.motorola.samples.modsraw;
 
 import java.io.UnsupportedEncodingException;
 import java.security.InvalidKeyException;
@@ -123,6 +123,14 @@ public class Constants {
             0x00, /* interval(low) */
             0x20, /* interval(high) */};
     public static byte[] RAW_CMD_STOP = {TEMP_RAW_COMMAND_OFF, 0x00}; /* stop cmd not need payload */
+
+    public static byte[] RAW_CMD_LED_ON = {0x01};
+    public static byte[] RAW_CMD_LED_OFF = {0x00};
+    public static byte[] RAW_CMD_SCALE1 = {0x00,0x01};
+    public static byte[] RAW_CMD_SCALE2 = {0x00,0x02};
+    public static byte[] RAW_CMD_SCALE3 = {0x00,0x03};
+    public static byte[] RAW_CMD_ADC_OFF = {0x00,0x00,0x00};
+    public static byte[] RAW_CMD_ADC_ON = {0x00,0x00,0x01};
 
     /**
      * RAW data encrypt / decrypt via AES.

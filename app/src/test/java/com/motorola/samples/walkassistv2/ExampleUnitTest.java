@@ -26,13 +26,18 @@
  * ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-package com.motorola.samples.mdksensor;
+package com.motorola.samples.modsraw;
 
-import android.app.Application;
+import org.junit.Test;
 
-public class MDKSensorApplication extends Application {
-    @Override
-    public void onCreate() {
-        super.onCreate();
+import static org.junit.Assert.assertEquals;
+
+/**
+ * To work on unit tests, switch the Test Artifact in the Build Variants view.
+ */
+public class ExampleUnitTest {
+    @Test
+    public void addition_isCorrect() throws Exception {
+        assertEquals(4, 2 + 2);
     }
 }
